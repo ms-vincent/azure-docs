@@ -25,7 +25,7 @@ The standard storage with cool access feature provides options for the “coolne
 * You can convert an existing Standard service-level capacity pool into a cool-access capacity pool to create cool access volumes. However, once the capacity pool is enabled for cool access, you can't convert it back to a non-cool-access capacity pool.  
 * A cool-access capacity pool can contain both volumes with cool access enabled and volumes with cool access disabled.
 * To prevent data retrieval from the cool tier to the hot tier during sequential read operations (for example, antivirus or other file scanning operations), set the cool access retrieval policy to "Default" or "Never." For more information, see [Enable cool access on a new volume](#enable-cool-access-on-a-new-volume).
-    * Sequential reads from Azure NetApp Files backup, cross-zone replication, and cross-zone replication do not impact the temperature of the data.
+    * Sequential reads from Azure NetApp Files backup, cross-region replication, and cross-zone replication do not impact the temperature of the data.
     * If you're using a third-party backup service, configure it to use NDMP instead of the CIFS or NFS protocols. NDMP reads do not affect the temperature of the data.
 * After the capacity pool is configured with the option to support cool access volumes, the setting can't be disabled at the _capacity pool_ level. However, you can turn on or turn off the cool access setting at the volume level anytime. Turning off the cool access setting at the _volume_ level stops further tiering of data.  
 * You can't use [large volume](large-volumes-requirements-considerations.md) with Standard storage with cool access.
