@@ -597,7 +597,7 @@ echo "Enter the resource group name:" &&
 read resourceGroupName &&
 echo "Enter the storage account name:" &&
 read storageAccountName &&
-az storage account delete --name storageAccountName --resource-group resourceGroupName
+az storage account delete --name $storageAccountName --resource-group $resourceGroupName
 ```
 
 # [Template](#tab/template)
