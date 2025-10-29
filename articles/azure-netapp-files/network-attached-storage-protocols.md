@@ -98,7 +98,7 @@ For frequently asked questions regarding NFS in Azure NetApp Files, see the [Azu
 
 SMB is primarily used with Windows clients for NAS functionality. However, it can also be used on Linux-based operating systems such as AppleOS, RedHat, etc. This deployment is accomplished using an application called Samba. Azure NetApp Files has official support for SMB using Windows and macOS. SMB/Samba on Linux operating systems can work with Azure NetApp Files, but there's no official support. 
 
-Azure NetApp Files supports only SMB 2.1 and SMB 3.1 versions. 
+Azure NetApp Files supports only SMB 2.1, 3.0 and 3.1.1 versions. 
 
 SMB has the following characteristics: 
 
